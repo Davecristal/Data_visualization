@@ -8,7 +8,8 @@ y_values = [x**2 for x in x_values]  # 计算平方值
 plt.style.use('seaborn-v0_8') 
 fig, ax = plt.subplots() 
 #ax.scatter(x_values, y_values, c='red', s=10)  # s is the size of the point
-ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10) # 使用颜色映射n
+ax.scatter(x_values, y_values, c=y_values, 
+           cmap=plt.cm.Blues, s=10) # 使用颜色映射
 
 # 设置图表的标题和标签
 ax.set_title("Square", fontsize=24)
